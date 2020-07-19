@@ -1,0 +1,80 @@
+{
+ "autoname": "DGP/.##",
+ "creation": "2019-12-18 16:36:42.639240",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "metal",
+  "customer_group",
+  "column_break_4",
+  "purity",
+  "price"
+ ],
+ "fields": [
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Customer Group",
+   "options": "Customer Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "purity",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Purity",
+   "options": "Purity",
+   "reqd": 1
+  },
+  {
+   "fieldname": "price",
+   "fieldtype": "Currency",
+   "label": "Price",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal",
+   "fieldtype": "Select",
+   "label": "Metal",
+   "options": "\nGold\nSilver",
+   "reqd": 1
+  }
+ ],
+ "modified": "2019-12-26 14:23:03.974607",
+ "modified_by": "Administrator",
+ "module": "Gold",
+ "name": "Daily Gold Price",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

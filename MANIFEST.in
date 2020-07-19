@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include gold *.css
+recursive-include gold *.csv
+recursive-include gold *.html
+recursive-include gold *.ico
+recursive-include gold *.js
+recursive-include gold *.json
+recursive-include gold *.md
+recursive-include gold *.png
+recursive-include gold *.py
+recursive-include gold *.svg
+recursive-include gold *.txt
+recursive-exclude gold *.pyc

@@ -1,0 +1,187 @@
+{
+ "creation": "2020-07-01 15:36:26.818228",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "refresh_data",
+  "column_break_3",
+  "customer_group",
+  "section_break_2",
+  "item_code",
+  "serial_no",
+  "calculate",
+  "weight",
+  "stone_weight",
+  "column_break_7",
+  "metal",
+  "other_weight",
+  "purity",
+  "section_break_8",
+  "metal_rate",
+  "total_metal",
+  "column_break_17",
+  "metal_with_wastage",
+  "section_break_11",
+  "wastage",
+  "labour",
+  "column_break_14",
+  "total_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item Code",
+   "options": "Item"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "label": "Serial No",
+   "options": "Serial No"
+  },
+  {
+   "fetch_from": "serial_no.weight",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "serial_no.stone_weight",
+   "fieldname": "stone_weight",
+   "fieldtype": "Float",
+   "label": "Stone Weight",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "serial_no.other_weight",
+   "fieldname": "other_weight",
+   "fieldtype": "Float",
+   "label": "Other Weight",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "serial_no.purity",
+   "fieldname": "purity",
+   "fieldtype": "Float",
+   "label": "Purity",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "metal_rate",
+   "fieldtype": "Currency",
+   "label": "Metal Rate",
+   "read_only": 1
+  },
+  {
+   "fieldname": "total_metal",
+   "fieldtype": "Float",
+   "label": "Total Metal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "metal_with_wastage",
+   "fieldtype": "Float",
+   "label": "Metal With Wastage",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "wastage",
+   "fieldtype": "Float",
+   "label": "Wastage"
+  },
+  {
+   "fieldname": "labour",
+   "fieldtype": "Float",
+   "label": "Labour"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_price",
+   "fieldtype": "Currency",
+   "label": "Total Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "refresh_data",
+   "fieldtype": "Button",
+   "label": "Refresh"
+  },
+  {
+   "fetch_from": "item_code.metal",
+   "fieldname": "metal",
+   "fieldtype": "Data",
+   "label": "Metal",
+   "read_only": 1
+  },
+  {
+   "fieldname": "customer_group",
+   "fieldtype": "Link",
+   "label": "Customer Group",
+   "options": "Customer Group"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "calculate",
+   "fieldtype": "Button",
+   "label": "Calculate"
+  }
+ ],
+ "issingle": 1,
+ "modified": "2020-07-03 18:17:49.345690",
+ "modified_by": "Administrator",
+ "module": "Gold",
+ "name": "Price Calculator",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
