@@ -79,6 +79,30 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
+fixtures = [
+    {
+        "doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [
+			"Serial No-purity",
+			"Serial No-other_weight",
+			"Serial No-column_break_15",
+			"Serial No-stone_weight",
+			"Serial No-weight",
+			"Serial No-section_break_12",
+			"Purchase Invoice Item-stone_weight",
+			"Purchase Invoice Item-other_weight",
+			"Purchase Invoice Item-purity"
+		]
+	   ]
+	]
+    }
+]
+
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",
